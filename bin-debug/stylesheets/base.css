@@ -1,0 +1,36 @@
+/* CSS file */
+Application{
+	backgroundColor:#EFEFEF;
+	color:#333333;
+	backgroundGradientAlphas: 1.0, 1.0;
+	backgroundGradientColors: #ffffff, #999999;
+	themeColor:#3399FF;
+}
+
+@font-face
+{
+	fontFamily: Verdana;
+	fontWeight: normal;
+	fontStyle: normal;
+	src: url("VL-PGothic-Regular.ttf"); 
+}
+
+Button
+{
+	color:#FFFFFF;
+	textRollOverColor:#FFFFFF;
+	text-selected-color:#A42E00;
+	font-size:12;
+	font-weight:normal;
+	padding-top:6; padding-bottom:6; padding-right:10; padding-left:10;
+
+	upSkin: Embed(source="images/Button_upSkin.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	overSkin: Embed(source="images/Button_overSkin.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	downSkin: Embed(source="images/Button_downSkin.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	disabledSkin: Embed(source="images/Button_disabled.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	selectedUpSkin: Embed(source="images/Button_downSkin.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	selectedOverSkin: Embed(source="images/Button_overSkin.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	selectedDownSkin: Embed(source="images/Button_downSkin.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	selectedDisabledSkin: Embed(source="images/Button_disabled.png",scaleGridLeft="2",scaleGridTop="2",scaleGridRight="72",scaleGridBottom="26");
+	disabledColor: #777777;
+}

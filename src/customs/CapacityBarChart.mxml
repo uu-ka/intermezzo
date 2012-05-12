@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:BarChart xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" height="100%" showDataTips="true" mouseSensitivity="0" dataTipFunction="barChartDataTipFunction" >
+	<mx:Script>
+		<![CDATA[
+			import mx.charts.HitData;
+
+			private function barChartDataTipFunction(hitData:HitData):String
+			{
+				hitData.contextColor = 0xFF0000; // ポイントの色
+				return hitData.item.name + "<BR/>" + "size: " + hitData.item.size + "KB";
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:SeriesSlide id="slideEffect" duration="1000" direction="right"/>
+	
+	<mx:verticalAxis>
+		<mx:CategoryAxis categoryField="name"/>
+	</mx:verticalAxis>
+	<mx:series>
+		<mx:BarSeries id="dreakdown2"  xField="size" yField="name" showDataEffect="slideEffect" />
+		
+	</mx:series>
+</mx:BarChart>

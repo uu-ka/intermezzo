@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" 
+						xmlns:local="*" showFlexChrome="false" xmlns:mainWindow="views.mainWindow.*">
+    <mx:Style source="./stylesheets/base.css"/>
+	<local:IntermezzoController id="controller"/>
+	<mainWindow:MainWindow id="mainWindow"/>
+
+</mx:WindowedApplication>

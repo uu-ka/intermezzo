@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml"
+	 width="100%" height="100%" showCloseButton="true"  borderThicknessBottom="10" xmlns:customs="customs.*" xmlns:mainWindow="views.mainWindow.*">
+		
+		<mainWindow:MainWindowController id="controller"/>
+		
+		<mx:VBox width="100%" height="100%">
+		
+			<mx:VBox id="graphArea" width="100%" height="100%" verticalScrollPolicy="auto">
+				<mx:HBox width="100%">
+					<mx:Spacer width="100%" />
+					<customs:VisibleControlButton id="resizeButton" label="縮小" hideLabel="拡大" source="{this.detailArea}"/>	
+				</mx:HBox>
+				<mx:ModuleLoader id="moduleLoader" width="100%" height="100%"/>
+			</mx:VBox>
+			
+			<mx:HRule width="100%" height="10"/>
+			
+			<mx:HBox id="detailArea" width="100%" height="100%" paddingTop="5" paddingBottom="10" paddingLeft="10" paddingRight="10">
+				<mx:VBox id="test" width="10%" height="100%">
+					<mx:Button label="check !" id="checkButton" enabled="false" width="100%" height="15%" styleName="Button2"/>
+					<mx:HRule/>
+					<mx:Button id="barChartButton" label="barChart" width="100%" height="15%"/>
+					<mx:Button id="pieChartButton" label="pieChart" width="100%" height="15%"/>
+				</mx:VBox>
+				<mx:FileSystemTree id="routeTree" width="30%" height="100%"/>
+				<mx:VBox width="100%" height="100%">
+					<mx:TextInput id="path" width="100%"/>
+					<customs:CapacityDataGrid id="dataGrid" width="100%" height="100%" editable="false" selectable="false" doubleClickEnabled="false"/>
+				</mx:VBox>
+			</mx:HBox>
+			
+		</mx:VBox>
+</mx:TitleWindow>

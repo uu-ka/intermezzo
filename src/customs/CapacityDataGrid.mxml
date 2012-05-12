@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:FileSystemDataGrid xmlns:mx="http://www.adobe.com/2006/mxml"  creationComplete="creationCompleteHandler();">
+	<mx:Script>
+		<![CDATA[
+			
+			private function creationCompleteHandler():void {
+				this.columns = [this.nameColumn, this.typeColumn, this.sizeColumn];
+				
+			}
+		]]>
+	</mx:Script>
+	
+	
+	
+	
+</mx:FileSystemDataGrid>
